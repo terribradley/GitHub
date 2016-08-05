@@ -7,6 +7,7 @@ $(document).ready(function() {
     event.preventDefault();
     var name = $('#name').val();
     $('#name').val("");
+    $('#output').append("Here is a list of " + name + "'s Repositories.");
     currentGitRepos.getRepos(name);
   });
 });

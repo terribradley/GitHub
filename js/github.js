@@ -1,19 +1,17 @@
 var apiKey = require('./../.env').apiKey;
 
 function GitRepos() {
-
+  this.name = name;
 }
 
 GitRepos.prototype.getRepos = function(name) {
-  $.get('https://api.github.com/users/' + name + '/repos?access_token=' + apiKey).then(function(response){
-
-    // console.log(response);
-    // for(var i=0; i<response.length; i++) {
-      $('#output').text("Here is a list of" + name + "'s Repositories. Included is a title and a brief description:");
-      $('repos-list').append('<li>'+ response[1].name + '</li>' + '<li>' response[1].description + '<li>');
-    });
+  $.get("https://api.github.com/users/" + name + "/repos?access_token=" + apiKey).then(function(response){
+    console.log(response);
+    for(var i=0; i<response.length; i++) {
+      $("#repos-list").append("<li class='repo'>" + response[i].name + ":</li> " + "<li>" + response[i].description + "</li>");
+    };
       // console.log(response[1].description);
-  });.fail(function(error){
+  }).fail(function(error){
     $('.error-message').text(error.responseJSON.message);
   });
 };
