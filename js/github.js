@@ -9,7 +9,7 @@ GitRepos.prototype.getRepos = function(name) {
     console.log(response);
     for(var i=0; i<response.length; i++) {
       $("#repos-list").append("<li class='repo'>" + response[i].name + ":</li> " + "<li>" + response[i].description + "</li>");
-    };
+    }
       // console.log(response[1].description);
   }).fail(function(error){
     $('.error-message').text(error.responseJSON.message);
