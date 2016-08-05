@@ -1,6 +1,4 @@
-
-
-var GitHub = require('./../js/github.js').gitreposModule;
+var GitRepos = require('./../js/github.js').gitreposModule;
 
 // var displayGitHubUser = function(ghUser) {
 //   $('.show-gh-user-info').text("The GitHub username you entered is " + ghUser + ".");
@@ -21,7 +19,6 @@ $(document).ready(function() {
   $('#search-form').submit(function(event) {
     event.preventDefault();
     var name = $('#name').val();
-    debugger;
     $('#name').val("");
     currentGitRepos.getRepos(name);
   });
