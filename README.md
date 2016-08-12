@@ -2,7 +2,7 @@
 
 #### _Epicodus: JavaScript (Week 1 Solo Project), August 5, 2016_
 
-#### By _**Marty Fitchen**_
+#### By _**Terri Bradley**_
 
 ## Description
 
