@@ -1,6 +1,6 @@
 # _GitHub API_
 
-#### _Epicodus: JavaScript (Week 1 Solo Project), August 5, 2016_
+#### _Epicodus: JavaScript - Week 2 Solo Project_
 
 #### By _**Terri Bradley**_
 
